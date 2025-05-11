@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página principal del curso WDD231" />
+  <meta name="author" content="Laura Nunez" />
+  <title>WDD231 - Página Principal</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/tu-foto.jpg" alt="Foto de Tu Nombre" />
+    <span>Laura Nunez</span>
+  </header>
+
+  <nav>
+    <button id="menu">☰</button>
+    <ul class="navigation">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Cámara de Comercio</a></li>
+      <li><a href="#">Proyecto Final</a></li>
+      <li><a href="#">Perfil de GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Inicio</h1>
+    
+
+          <!-- Course Work Card -->
+  <section class="card">
+    <h2>Course Work</h2>
+    <div id="coursework"></div>
+  </section>
+
+    
+    <section>
+      <h2>Sección 2</h2>
+      <p>Contenido de la sección 2.</p>
+    </section>
+    <section>
+      <h2>Sección 3</h2>
+      <p>Contenido de la sección 3.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Laura Nunez, Japón</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/coursework.js"></script>
+
+</body>
+</html>

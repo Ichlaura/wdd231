@@ -1,0 +1,62 @@
+@media (min-width: 640px) {
+    #menu {
+      display: none;
+    }
+  
+    .navigation {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .navigation li {
+      border: none;
+    }
+  
+    .navigation a {
+      padding: 1rem 2rem;
+    }
+  
+    header {
+      justify-content: center;
+    }
+  
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  /* estilos para la tarjeta de Course Work */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  
+  /* Contenedor de enlaces dentro de la card */
+  #coursework section {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Título de cada semana */
+  #coursework h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Lista de enlaces */
+  #coursework a {
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #1e90ff;
+  }
+  
+  #coursework a:hover {
+    text-decoration: underline;
+  }
+  
+  

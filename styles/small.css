@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  nav {
+    background-color: #333;
+  }
+  
+  #menu {
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navigation li {
+    border-top: 1px solid #555;
+  }
+  
+  .navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  .navigation.open {
+    display: flex;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* estilos para la tarjeta de Course Work */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  
+  /* Contenedor de enlaces dentro de la card */
+  #coursework section {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Título de cada semana */
+  #coursework h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Lista de enlaces */
+  #coursework a {
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #1e90ff;
+  }
+  
+  #coursework a:hover {
+    text-decoration: underline;
+  }
+  
