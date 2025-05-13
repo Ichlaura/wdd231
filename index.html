@@ -15,48 +15,146 @@
 </head>
 <body>
   <header>
-    <img src="images/tu-foto.jpg" alt="Foto de Tu Nombre" />
-    <span>Laura Nunez</span>
+    <img src="images/image1.jpg" alt="Laura Paola Nunez Cala" />
+    <span>Laura  Nunez </span>
   </header>
-
   <nav>
     <button id="menu">☰</button>
     <ul class="navigation">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Cámara de Comercio</a></li>
-      <li><a href="#">Proyecto Final</a></li>
-      <li><a href="#">Perfil de GitHub</a></li>
-      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+      <li><a href="https://github.com/Ichlaura" target="_blank">GitHub Profile</a></li>
+      <li><a href="https://www.linkedin.com/in/laupao41/" target="_blank">LinkedIn</a></li>
     </ul>
   </nav>
-
+  
   <main>
-    <h1>Inicio</h1>
+    <h1>Home</h1>
     
-
+    <div class="card-grid">
           <!-- Course Work Card -->
-  <section class="card">
-    <h2>Course Work</h2>
-    <div id="coursework"></div>
+          <section class="card">
+            <h2>Course Work</h2>
+            <div class="accordion">
+              <button class="accordion-btn">Week 01</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li>W01 Quiz: Course Expectations</li>
+                  <li>W01 Quiz: Tools Setup</li>
+                  <li>W01 Quiz: Learning Activities</li>
+                  <li>W01 Assignment: Course Home Page</li>
+                  <li>W01 60-second Status Update</li>
+                </ul>
+              </div>
+          
+              <button class="accordion-btn">Week 02</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li>W02 Quiz: Learning Activities</li>
+                  <li>W02 Assignment: Chamber Directory Page</li>
+                  <li>W02 Team Activity: Report</li>
+                  <li>W02 60-second Status Update</li>
+                </ul>
+              </div>
+          
+              <button class="accordion-btn">Week 03</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li>W03 Quiz: Learning Activities</li>
+                  <li>W03 Assignment: Chamber Home Page</li>
+                  <li>W03 Team Activity: Report</li>
+                  <li>W03 60-second Status Update</li>
+                  <li>W03 Student Feedback</li>
+                </ul>
+              </div>
+          
+              <button class="accordion-btn">Week 04</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li>W04 Quiz: Learning Activities</li>
+                  <li>W04 Project Proposal</li>
+                  <li>W04 Assignment: Chamber Join Page</li>
+                  <li>W04 Team Activity</li>
+                  <li>W04 60-second Status Update</li>
+                </ul>
+              </div>
+          
+              <button class="accordion-btn">Week 05</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li>W05 Quiz: Learning Activities</li>
+                  <li>W05 Project: Site Plan</li>
+                  <li>W05 Assignment: Chamber Discover Page</li>
+                  <li>W05 Team Activity</li>
+                  <li>W05 60-second Status Update</li>
+                  <li>W05 Mission Feedback</li>
+                </ul>
+              </div>
+          
+              <button class="accordion-btn">Week 06</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li>W06 Project: Completion</li>
+                </ul>
+              </div>
+          
+              <button class="accordion-btn">Week 07</button>
+              <div class="accordion-panel">
+                <ul>
+                  <li>W07 Final Exam</li>
+                  <li>W07 End-of-Course Evaluation</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+     
+          
+          <script>
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.nextElementSibling;
+      panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+          </script>
+          
+
+            <!-- Course Work Card -->
+            <section class="card">
+                <h2>Chiba, Japan</h2>
+                <div id="chibajapan">
+                  <p>The Chiba Monorail during Sakura Season</p>
+                  <img src="images/monorail1.jpg" alt="Chiba Monorail during Sakura Season" style="width: 80%; height: auto; border-radius: 8px;" />
+                </div>
+              </section>
+              
+              
+            </div>
+    <!-- Mostrar los cursos con botones -->
+ 
+ <!-- Filtro de Cursos -->
+ <section class="card">
+    <h2>Web and Computer Programming Certificate</h2>
+    <div class="course-filter">
+      <button id="allBtn" class="filter-btn">All</button>
+      <button id="cseBtn" class="filter-btn">CSE</button>
+      <button id="wddBtn" class="filter-btn">WDD</button>
+    </div>
+    <div id="courses"></div>
   </section>
 
-    
-    <section>
-      <h2>Sección 2</h2>
-      <p>Contenido de la sección 2.</p>
-    </section>
-    <section>
-      <h2>Sección 3</h2>
-      <p>Contenido de la sección 3.</p>
-    </section>
+
+ 
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Laura Nunez, Japón</p>
+    <p>&copy; <span id="currentyear"></span> Laura Nunez, Japan</p>
     <p id="lastModified"></p>
   </footer>
 
   <script src="scripts/coursework.js"></script>
+ 
 
 </body>
 </html>
