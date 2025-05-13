@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Página principal del curso WDD231" />
-  <meta name="author" content="Laura Nunez" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Página principal del curso WDD231" >
+  <meta name="author" content="Laura Nunez" >
   <title>WDD231 - Página Principal</title>
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/small.css" />
-  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="stylesheet" href="styles/normalize.css" >
+  <link rel="stylesheet" href="styles/small.css" >
+  <link rel="stylesheet" href="styles/larger.css" >
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/course.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="images/image1.jpg" alt="Laura Paola Nunez Cala" />
+    <img src="images/image1.jpg" alt="Laura Paola Nunez Cala" >
     <span>Laura  Nunez </span>
+
   </header>
   <nav>
     <button id="menu">☰</button>
@@ -110,14 +111,7 @@
           </section>
      
           
-          <script>
-        document.querySelectorAll('.accordion-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const panel = button.nextElementSibling;
-      panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
-    });
-  });
-          </script>
+   
           
 
             <!-- Course Work Card -->
@@ -125,7 +119,8 @@
                 <h2>Chiba, Japan</h2>
                 <div id="chibajapan">
                   <p>The Chiba Monorail during Sakura Season</p>
-                  <img src="images/monorail1.jpg" alt="Chiba Monorail during Sakura Season" style="width: 80%; height: auto; border-radius: 8px;" />
+                  <img src="images/monorail1.jpg" alt="Chiba Monorail " style="width: 80%; height: auto; border-radius: 8px;" />
+                 
                 </div>
               </section>
               
@@ -155,6 +150,15 @@
 
   <script src="scripts/coursework.js"></script>
  
+
+  <script>
+    document.querySelectorAll('.accordion-btn').forEach(button => {
+button.addEventListener('click', () => {
+  const panel = button.nextElementSibling;
+  panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+});
+});
+      </script>
 
 </body>
 </html>
