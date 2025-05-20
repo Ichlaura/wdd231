@@ -69,3 +69,16 @@ listBtn.addEventListener('click', () => {
 // Inicializar
 displayMembers();
 setGridView();
+
+fetch('data/members.json')
+  .then(response => {
+    console.log('Respuesta fetch:', response);
+    if (!response.ok) throw new Error('Error HTTP: ' + response.status);
+    return response.json();
+  })
+  .then(data => {
+    console.log('Datos JSON cargados:', data);
+  })
+  .catch(error => {
+    console.error('Error cargando JSON:', error);
+  });
