@@ -26,7 +26,7 @@ function createMemberCard(member) {
 // Función para mostrar miembros
 async function displayMembers() {
     try {
-        const response = await fetch('./data/members.json');
+        const response = await fetch('https://ichlaura.github.io/wdd231/chamber/data/members.json');
       
 
 
@@ -70,15 +70,4 @@ listBtn.addEventListener('click', () => {
 displayMembers();
 setGridView();
 
-fetch('data/members.json')
-  .then(response => {
-    console.log('Respuesta fetch:', response);
-    if (!response.ok) throw new Error('Error HTTP: ' + response.status);
-    return response.json();
-  })
-  .then(data => {
-    console.log('Datos JSON cargados:', data);
-  })
-  .catch(error => {
-    console.error('Error cargando JSON:', error);
-  });
+
