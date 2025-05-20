@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Empresa Alpha",
+        "address": "Calle 123, Ciudad",
+        "phone": "555-1234",
+        "website": "https://empresa-alpha.com",
+        "image": "alpha.png",
+        "membership": 3,
+        "description": "Proveedor de servicios tecnológicos de alta calidad."
+    },
+    {
+        "name": "Beta Servicios",
+        "address": "Avenida Central 456",
+        "phone": "555-5678",
+        "website": "https://betaservicios.com",
+        "image": "beta.png",
+        "membership": 2,
+        "description": "Servicios profesionales para empresas."
+    },
+    {
+        "name": "Gamma Retail",
+        "address": "Plaza Comercial 789",
+        "phone": "555-8765",
+        "website": "https://gammaretail.com",
+        "image": "gamma.png",
+        "membership": 1,
+        "description": "Tienda de productos electrónicos."
+    },
+    {
+        "name": "Delta Construcción",
+        "address": "Boulevard 101",
+        "phone": "555-4321",
+        "website": "https://deltaconstruccion.com",
+        "image": "delta.png",
+        "membership": 3,
+        "description": "Construcción y remodelación."
+    },
+    {
+        "name": "Epsilon Marketing",
+        "address": "Callejón 202",
+        "phone": "555-3456",
+        "website": "https://epsilonmarketing.com",
+        "image": "epsilon.png",
+        "membership": 2,
+        "description": "Marketing digital y publicidad."
+    },
+    {
+        "name": "Zeta Consultores",
+        "address": "Parque 303",
+        "phone": "555-6543",
+        "website": "https://zetaconsultores.com",
+        "image": "zeta.png",
+        "membership": 1,
+        "description": "Consultoría financiera y administrativa."
+    },
+    {
+        "name": "Eta Café",
+        "address": "Plaza 404",
+        "phone": "555-7890",
+        "website": "https://etacafe.com",
+        "image": "eta.png",
+        "membership": 3,
+        "description": "Café y productos gourmet."
+    }
+]

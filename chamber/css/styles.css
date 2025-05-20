@@ -1,0 +1,128 @@
+/* Variables de color */
+:root {
+    --primary-color: #004080;
+    --secondary-color: #e0f0ff;
+    --text-color: #333;
+    --accent-color: #ff6600;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#view-toggle {
+    margin: 1rem;
+    text-align: center;
+}
+
+#view-toggle button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#view-toggle button:hover {
+    background-color: var(--accent-color);
+}
+
+#members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#members-container.list-view {
+    display: block;
+    padding: 1rem;
+}
+
+.member-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #aaa;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.member-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.member-card p {
+    margin: 0.25rem 0;
+}
+
+.list-view .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.list-view .member-card img {
+    max-width: 80px;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
