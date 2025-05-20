@@ -1,65 +1,65 @@
 [
     {
-        "name": "Empresa Alpha",
-        "address": "Calle 123, Ciudad",
-        "phone": "555-1234",
-        "website": "https://empresa-alpha.com",
-        "image": "alpha.png",
+        "name": "Paola's English School",
+        "address": "Togane, Chiba, Japan",
+        "phone": "+81-70-1234-5678",
+        "website": "https://paolasenglishschool.com",
+        "image": "favicon.svg",
         "membership": 3,
-        "description": "Proveedor de servicios tecnológicos de alta calidad."
+        "description": "English school for all ages with native teachers from the United States. We offer both in-person and online classes."
     },
     {
-        "name": "Beta Servicios",
-        "address": "Avenida Central 456",
-        "phone": "555-5678",
-        "website": "https://betaservicios.com",
-        "image": "beta.png",
+        "name": "International Café Togane",
+        "address": "1-5-10 Higashidai, Togane, Chiba, Japan",
+        "phone": "+81-70-5678-1234",
+        "website": "https://internationalcafe.jp",
+        "image": "cafe.png",
         "membership": 2,
-        "description": "Servicios profesionales para empresas."
+        "description": "A friendly coffee shop run by expats, offering global flavors and language exchange events."
     },
     {
-        "name": "Gamma Retail",
-        "address": "Plaza Comercial 789",
-        "phone": "555-8765",
-        "website": "https://gammaretail.com",
-        "image": "gamma.png",
+        "name": "Togane Global Foods Market",
+        "address": "3-4-2 Chuo, Togane, Chiba, Japan",
+        "phone": "+81-80-4444-3333",
+        "website": "https://globalfoods-togane.com",
+        "image": "market.png",
         "membership": 1,
-        "description": "Tienda de productos electrónicos."
+        "description": "Supermarket offering international food products from Latin America, Southeast Asia, and Europe."
     },
     {
-        "name": "Delta Construcción",
-        "address": "Boulevard 101",
-        "phone": "555-4321",
-        "website": "https://deltaconstruccion.com",
-        "image": "delta.png",
-        "membership": 3,
-        "description": "Construcción y remodelación."
-    },
-    {
-        "name": "Epsilon Marketing",
-        "address": "Callejón 202",
-        "phone": "555-3456",
-        "website": "https://epsilonmarketing.com",
-        "image": "epsilon.png",
+        "name": "Chiba English Services",
+        "address": "2-8-6 Matsuyama, Togane, Chiba, Japan",
+        "phone": "+81-70-5555-2222",
+        "website": "https://chibaenglish.com",
+        "image": "englishservices.png",
         "membership": 2,
-        "description": "Marketing digital y publicidad."
+        "description": "Language support and translation services for foreigners living in Chiba. English, Spanish, and Tagalog available."
     },
     {
-        "name": "Zeta Consultores",
-        "address": "Parque 303",
-        "phone": "555-6543",
-        "website": "https://zetaconsultores.com",
-        "image": "zeta.png",
+        "name": "World Hair & Beauty Salon",
+        "address": "4-9-7 Sakae, Togane, Chiba, Japan",
+        "phone": "+81-80-2222-7777",
+        "website": "https://worldbeautytogane.com",
+        "image": "salon.png",
         "membership": 1,
-        "description": "Consultoría financiera y administrativa."
+        "description": "Multilingual beauty salon specializing in hairstyles and treatments for international hair types."
     },
     {
-        "name": "Eta Café",
-        "address": "Plaza 404",
-        "phone": "555-7890",
-        "website": "https://etacafe.com",
-        "image": "eta.png",
+        "name": "Global Tech Solutions",
+        "address": "5-1-1 Shinmachi, Togane, Chiba, Japan",
+        "phone": "+81-90-1111-8888",
+        "website": "https://globaltech-togane.com",
+        "image": "tech.png",
         "membership": 3,
-        "description": "Café y productos gourmet."
+        "description": "Tech support and web services company offering bilingual support to small businesses in Chiba."
+    },
+    {
+        "name": "Togane Language Exchange Hub",
+        "address": "1-2-3 Asahicho, Togane, Chiba, Japan",
+        "phone": "+81-70-0000-9999",
+        "website": "https://languagehub-togane.com",
+        "image": "hub.png",
+        "membership": 2,
+        "description": "Community center that hosts events for cultural exchange and language practice in English, Japanese, and Spanish."
     }
 ]
