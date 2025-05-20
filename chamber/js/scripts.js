@@ -26,7 +26,10 @@ function createMemberCard(member) {
 // Función para mostrar miembros
 async function displayMembers() {
     try {
-        const response = await fetch('data/members.json');
+        const response = await fetch('/wdd231/chamber/data/members.json')
+        ;
+       
+
         const members = await response.json();
 
         // Limpiar contenido previo
