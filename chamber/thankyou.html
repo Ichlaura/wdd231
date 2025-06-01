@@ -93,5 +93,17 @@
     });
   </script>
 
+
+<footer>
+    <p>&copy; <span id="year"></span> Togane Chamber of Commerce | Laura P. Núñez</p>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+  
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>
