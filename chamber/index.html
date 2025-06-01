@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Togane Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Togane Chamber of Commerce. Connect, grow, and discover local opportunities." />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Togane Chamber of Commerce</h1>
+    <p>Supporting Local Business & Community Growth</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Beautiful view of Togane" />
+      <div class="hero-text">
+        <h2>Grow With Us</h2>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>🌸 Summer Festival - July 20</li>
+        <li>💼 Networking Night - August 5</li>
+        <li>🎤 Bilingual Marketing Workshop - August 12</li>
+      </ul>
+    </section>
+
+    <!-- Weather -->
+    <section class="weather" id="weather">
+      <h2>Weather in Togane</h2>
+      <p id="current-temp">Loading temperature...</p>
+      <p id="description"></p>
+      <div id="forecast"></div>
+    </section>
+
+    <!-- Spotlights -->
+    <section class="spotlights" id="spotlights">
+      <h2>Business Spotlights</h2>
+      <!-- Cards injected by JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Togane Chamber of Commerce | Laura P. Núñez</p>
+    <p>Last updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
