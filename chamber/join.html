@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chamber Membership Join</title>
+  <style>
+    /* Basic styling */
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    form { max-width: 500px; }
+    label { display: block; margin: 10px 0; }
+    input, textarea, select { width: 100%; padding: 8px; box-sizing: border-box; }
+    .cards {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;
+    }
+    .card {
+      flex: 1 1 45%; background: #f0f0f0; padding: 15px; border-radius: 8px;
+      cursor: pointer; transition: background-color 1s ease;
+      animation: fadeIn 2s forwards;
+      opacity: 0;
+    }
+    .card:hover { background: #ddd; }
+    @media (max-width: 600px) {
+      .cards { flex-direction: column; }
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    dialog {
+      border: none; border-radius: 10px; padding: 20px; box-shadow: 0 0 15px #00000066;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Join the Chamber of Commerce</h1>
+
+<form method="get" action="thankyou.html" id="membershipForm">
+  <label for="firstName">First Name:
+    <input type="text" id="firstName" name="firstName" required title="First name" autocomplete="given-name" />
+  </label>
+
+  <label for="lastName">Last Name:
+    <input type="text" id="lastName" name="lastName" required title="Last name" autocomplete="family-name" />
+  </label>
+
+  <label for="orgTitle">Organization Title:
+    <input type="text" id="orgTitle" name="orgTitle" title="Organization title" autocomplete="organization-title"
+      pattern="[A-Za-z\s-]{7,}" 
+      title="Only letters, spaces, and hyphens; minimum 7 characters" />
+  </label>
+
+  <label for="email">Email:
+    <input type="email" id="email" name="email" required title="Email address" autocomplete="email"
+      placeholder="example@domain.com" />
+  </label>
+
+  <label for="phone">Mobile Phone:
+    <input type="tel" id="phone" name="phone" required title="Mobile phone" autocomplete="tel" />
+  </label>
+
+  <label for="orgName">Organization Name:
+    <input type="text" id="orgName" name="orgName" required title="Organization name" autocomplete="organization" />
+  </label>
+
+  <label for="membershipLevel">Membership Level:
+    <select id="membershipLevel" name="membershipLevel" required title="Select membership level">
+      <option value="np">NP Membership (Non-Profit, Free)</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+  </label>
+
+  <label for="orgDesc">Organization Description:
+    <textarea id="orgDesc" name="orgDesc" title="Organization description"></textarea>
+  </label>
+
+  <input type="hidden" id="timestamp" name="timestamp" />
+
+  <input type="submit" value="Submit Membership Application" />
+</form>
+
+<section class="cards" aria-label="Membership Levels">
+  <div class="card" tabindex="0" data-modal="modal-np">
+    <h3>NP Membership</h3>
+    <p>Non-profit organizations, no fee.</p>
+    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-np'); return false;">More info</a>
+  </div>
+  <div class="card" tabindex="0" data-modal="modal-bronze">
+    <h3>Bronze Membership</h3>
+    <p>Entry-level benefits.</p>
+    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-bronze'); return false;">More info</a>
+  </div>
+  <div class="card" tabindex="0" data-modal="modal-silver">
+    <h3>Silver Membership</h3>
+    <p>Extra events and training.</p>
+    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-silver'); return false;">More info</a>
+  </div>
+  <div class="card" tabindex="0" data-modal="modal-gold">
+    <h3>Gold Membership</h3>
+    <p>Premium benefits and advertising.</p>
+    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-gold'); return false;">More info</a>
+  </div>
+</section>
+
+<!-- Modals -->
+<dialog id="modal-np" aria-modal="true" role="dialog" aria-labelledby="npTitle">
+  <h2 id="npTitle">NP Membership Benefits</h2>
+  <p>Non-profit organizations pay no fee and get access to community resources and events.</p>
+  <button onclick="closeModal('modal-np')">Close</button>
+</dialog>
+
+<dialog id="modal-bronze" aria-modal="true" role="dialog" aria-labelledby="bronzeTitle">
+  <h2 id="bronzeTitle">Bronze Membership Benefits</h2>
+  <p>Includes event invitations and limited advertising opportunities.</p>
+  <button onclick="closeModal('modal-bronze')">Close</button>
+</dialog>
+
+<dialog id="modal-silver" aria-modal="true" role="dialog" aria-labelledby="silverTitle">
+  <h2 id="silverTitle">Silver Membership Benefits</h2>
+  <p>Offers special training and better advertising spots.</p>
+  <button onclick="closeModal('modal-silver')">Close</button>
+</dialog>
+
+<dialog id="modal-gold" aria-modal="true" role="dialog" aria-labelledby="goldTitle">
+  <h2 id="goldTitle">Gold Membership Benefits</h2>
+  <p>Premium advertising, event discounts, and VIP access.</p>
+  <button onclick="closeModal('modal-gold')">Close</button>
+</dialog>
+
+<script>
+  // Set timestamp on page load
+  document.getElementById('timestamp').value = new Date().toISOString();
+
+  function openModal(id) {
+    const dlg = document.getElementById(id);
+    dlg.showModal();
+  }
+
+  function closeModal(id) {
+    const dlg = document.getElementById(id);
+    dlg.close();
+  }
+</script>
+
+</body>
+</html>

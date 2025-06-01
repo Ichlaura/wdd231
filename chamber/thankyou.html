@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You - Chamber Membership</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #ccc;
+    }
+    h1 {
+      color: #2a6ebb;
+    }
+    dl {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: inset 0 0 10px #ddd;
+    }
+    dt {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    dd {
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: white;
+      background-color: #2a6ebb;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: #1f4f8b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thank You for Joining the Chamber!</h1>
+  <p>We have received your membership application with the following information:</p>
+
+  <dl id="formData">
+    <!-- Data will be inserted here by JavaScript -->
+  </dl>
+
+  <a href="join.html">Back to Join Page</a>
+
+  <script>
+    // Helper to get URL params
+    function getQueryParams() {
+      const params = {};
+      location.search.substring(1).split("&").forEach(pair => {
+        const [key, value] = pair.split("=");
+        if (key) {
+          params[decodeURIComponent(key)] = decodeURIComponent(value.replace(/\+/g, ' '));
+        }
+      });
+      return params;
+    }
+
+    // Fields to display (required form fields + timestamp)
+    const fields = [
+      { key: "firstName", label: "First Name" },
+      { key: "lastName", label: "Last Name" },
+      { key: "email", label: "Email Address" },
+      { key: "phone", label: "Mobile Phone" },
+      { key: "orgName", label: "Organization Name" },
+      { key: "timestamp", label: "Submission Date and Time" }
+    ];
+
+    const params = getQueryParams();
+    const dl = document.getElementById("formData");
+
+    fields.forEach(field => {
+      const dt = document.createElement("dt");
+      dt.textContent = field.label;
+      const dd = document.createElement("dd");
+      dd.textContent = params[field.key] || "(Not provided)";
+      dl.appendChild(dt);
+      dl.appendChild(dd);
+    });
+  </script>
+
+</body>
+</html>
