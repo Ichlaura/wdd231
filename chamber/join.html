@@ -3,215 +3,173 @@
 <head>
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
- 
-    
-  <title>Togane Chamber of Commerce - Connecting Local Businesses</title>
-  <meta name="description" content="Explore and connect with local and international businesses in Togane City through our Chamber of Commerce.">
-  <meta name="author" content="Laura Paola Nunez Cala">
 
+  <title>Togane Chamber of Commerce - Join Us</title>
+  <meta name="description" content="Apply to become a member of the Togane Chamber of Commerce and connect with local businesses.">
+  <meta name="author" content="Laura Paola Nunez Cala">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
-   
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Chamber - members" >
-    <meta property="og:description" content="Explore local Togane City businesses and services from our members 私たちのメンバーから東金市の地元企業やサービスを探してみましょう。" >
-    <meta property="og:image" content="https://ichlaura.github.io/wdd231/chamber/images/favicon.svg">
-    <meta property="og:url" content="https://ichlaura.github.io/wdd231/chamber/directory.html" >
-    <meta property="og:type" content="website">
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" >
 
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="styles/normalize.css" >
-    
-    <!-- Estilo principal -->
-    <link rel="stylesheet" href="styles/styles.css" >
+  <!-- Estilo principal -->
+  <link rel="stylesheet" href="styles/styles.css" >
 
+  <!-- Facebook Meta Tags -->
+  <meta property="og:title" content="Join Togane Chamber" >
+  <meta property="og:description" content="Become a member of Togane Chamber of Commerce and grow your business with us.">
+  <meta property="og:image" content="https://ichlaura.github.io/wdd231/chamber/images/favicon.svg">
+  <meta property="og:url" content="https://ichlaura.github.io/wdd231/chamber/join.html" >
+  <meta property="og:type" content="website">
 
- <!-- scripts -->
+  <!-- Scripts -->
   <script src="scripts/weather.js" defer></script>
   <script src="scripts/spotlight.js" defer></script>
 
-
-
   <style>
-    /* Basic styling */
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    form { max-width: 500px; }
-    label { display: block; margin: 10px 0; }
-    input, textarea, select { width: 100%; padding: 8px; box-sizing: border-box; }
-    .cards {
-      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;
+    /* Aquí puedes mantener estilos específicos para esta página, o eliminarlos si los tienes en styles.css */
+    form {
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ddd;
+      font-family: Arial, sans-serif;
     }
-    .card {
-      flex: 1 1 45%; background: #f0f0f0; padding: 15px; border-radius: 8px;
-      cursor: pointer; transition: background-color 1s ease;
-      animation: fadeIn 2s forwards;
-      opacity: 0;
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
     }
-    .card:hover { background: #ddd; }
-    @media (max-width: 600px) {
-      .cards { flex-direction: column; }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
     }
-    @keyframes fadeIn {
-      to { opacity: 1; }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #2a6ebb;
+      outline: none;
     }
-    dialog {
-      border: none; border-radius: 10px; padding: 20px; box-shadow: 0 0 15px #00000066;
+
+    input[type="submit"] {
+      background-color: #2a6ebb;
+      color: white;
+      font-weight: bold;
+      border: none;
+      margin-top: 25px;
+      cursor: pointer;
+      padding: 12px 0;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1f4f8b;
     }
   </style>
 </head>
 
-
 <body>
-  <header>
+  <div class="container">
+
+    <header>
+      <p>Supporting Local Business & Community Growth</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Join the Chamber of Commerce</h1>
+
+      <form method="get" action="thankyou.html" id="membershipForm" novalidate>
+        <label for="firstName">First Name:
+          <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
+        </label>
+
+        <label for="lastName">Last Name:
+          <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
+        </label>
+
+        <label for="orgTitle">Organization Title:
+          <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title"
+            pattern="[A-Za-z\s-]{7,}" 
+            title="Only letters, spaces, and hyphens; minimum 7 characters" />
+        </label>
+
+        <label for="email">Email:
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com" />
+        </label>
+
+        <label for="phone">Mobile Phone:
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" />
+        </label>
+
+        <label for="orgName">Organization Name:
+          <input type="text" id="orgName" name="orgName" required autocomplete="organization" />
+        </label>
+
+        <label for="membershipLevel">Membership Level:
+          <select id="membershipLevel" name="membershipLevel" required>
+            <option value="" disabled selected>Select membership level</option>
+            <option value="np">NP Membership (Non-Profit, Free)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label for="orgDesc">Organization Description:
+          <textarea id="orgDesc" name="orgDesc" rows="4" placeholder="Tell us about your organization..."></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
+
+        <input type="submit" value="Submit Membership Application" />
+      </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Togane Chamber of Commerce | Laura P. Núñez</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+      </footer>
     
-    <p>Supporting Local Business & Community Growth</p>
-  </header>
+    
 
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="discover.html">Discover</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
-  </nav>
-
-
-
-
-
-
-
-
-
-<body>
-
-<h1>Join the Chamber of Commerce</h1>
-
-<form method="get" action="thankyou.html" id="membershipForm">
-  <label for="firstName">First Name:
-    <input type="text" id="firstName" name="firstName" required title="First name" autocomplete="given-name" />
-  </label>
-
-  <label for="lastName">Last Name:
-    <input type="text" id="lastName" name="lastName" required title="Last name" autocomplete="family-name" />
-  </label>
-
-  <label for="orgTitle">Organization Title:
-    <input type="text" id="orgTitle" name="orgTitle" title="Organization title" autocomplete="organization-title"
-      pattern="[A-Za-z\s-]{7,}" 
-      title="Only letters, spaces, and hyphens; minimum 7 characters" />
-  </label>
-
-  <label for="email">Email:
-    <input type="email" id="email" name="email" required title="Email address" autocomplete="email"
-      placeholder="example@domain.com" />
-  </label>
-
-  <label for="phone">Mobile Phone:
-    <input type="tel" id="phone" name="phone" required title="Mobile phone" autocomplete="tel" />
-  </label>
-
-  <label for="orgName">Organization Name:
-    <input type="text" id="orgName" name="orgName" required title="Organization name" autocomplete="organization" />
-  </label>
-
-  <label for="membershipLevel">Membership Level:
-    <select id="membershipLevel" name="membershipLevel" required title="Select membership level">
-      <option value="np">NP Membership (Non-Profit, Free)</option>
-      <option value="bronze">Bronze Membership</option>
-      <option value="silver">Silver Membership</option>
-      <option value="gold">Gold Membership</option>
-    </select>
-  </label>
-
-  <label for="orgDesc">Organization Description:
-    <textarea id="orgDesc" name="orgDesc" title="Organization description"></textarea>
-  </label>
-
-  <input type="hidden" id="timestamp" name="timestamp" />
-
-  <input type="submit" value="Submit Membership Application" />
-</form>
-
-<section class="cards" aria-label="Membership Levels">
-  <div class="card" tabindex="0" data-modal="modal-np">
-    <h3>NP Membership</h3>
-    <p>Non-profit organizations, no fee.</p>
-    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-np'); return false;">More info</a>
   </div>
-  <div class="card" tabindex="0" data-modal="modal-bronze">
-    <h3>Bronze Membership</h3>
-    <p>Entry-level benefits.</p>
-    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-bronze'); return false;">More info</a>
-  </div>
-  <div class="card" tabindex="0" data-modal="modal-silver">
-    <h3>Silver Membership</h3>
-    <p>Extra events and training.</p>
-    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-silver'); return false;">More info</a>
-  </div>
-  <div class="card" tabindex="0" data-modal="modal-gold">
-    <h3>Gold Membership</h3>
-    <p>Premium benefits and advertising.</p>
-    <a href="#" aria-haspopup="dialog" onclick="openModal('modal-gold'); return false;">More info</a>
-  </div>
-</section>
-
-<!-- Modals -->
-<dialog id="modal-np" aria-modal="true" role="dialog" aria-labelledby="npTitle">
-  <h2 id="npTitle">NP Membership Benefits</h2>
-  <p>Non-profit organizations pay no fee and get access to community resources and events.</p>
-  <button onclick="closeModal('modal-np')">Close</button>
-</dialog>
-
-<dialog id="modal-bronze" aria-modal="true" role="dialog" aria-labelledby="bronzeTitle">
-  <h2 id="bronzeTitle">Bronze Membership Benefits</h2>
-  <p>Includes event invitations and limited advertising opportunities.</p>
-  <button onclick="closeModal('modal-bronze')">Close</button>
-</dialog>
-
-<dialog id="modal-silver" aria-modal="true" role="dialog" aria-labelledby="silverTitle">
-  <h2 id="silverTitle">Silver Membership Benefits</h2>
-  <p>Offers special training and better advertising spots.</p>
-  <button onclick="closeModal('modal-silver')">Close</button>
-</dialog>
-
-<dialog id="modal-gold" aria-modal="true" role="dialog" aria-labelledby="goldTitle">
-  <h2 id="goldTitle">Gold Membership Benefits</h2>
-  <p>Premium advertising, event discounts, and VIP access.</p>
-  <button onclick="closeModal('modal-gold')">Close</button>
-</dialog>
-
-<script>
-  // Set timestamp on page load
-  document.getElementById('timestamp').value = new Date().toISOString();
-
-  function openModal(id) {
-    const dlg = document.getElementById(id);
-    dlg.showModal();
-  }
-
-  function closeModal(id) {
-    const dlg = document.getElementById(id);
-    dlg.close();
-  }
-</script>
-
-<footer>
-    <p>&copy; <span id="year"></span> Togane Chamber of Commerce | Laura P. Núñez</p>
-    <p>Last updated: <span id="lastModified"></span></p>
-  </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = document.lastModified;
+    // Añadir timestamp actual al enviar formulario
+    const form = document.getElementById('membershipForm');
+    form.addEventListener('submit', (event) => {
+      const timestampInput = document.getElementById('timestamp');
+      timestampInput.value = new Date().toISOString();
+      // Puedes agregar validaciones personalizadas aquí si quieres
+    });
   </script>
-  
-  <script src="scripts/scripts.js"></script>
-
-
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+      </script>
+      
+      <script src="scripts/scripts.js"></script>
 </body>
 </html>
