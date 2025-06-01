@@ -27,6 +27,8 @@
   <!-- Scripts -->
   <script src="scripts/weather.js" defer></script>
   <script src="scripts/spotlight.js" defer></script>
+
+ 
 </head>
 
 <body>
@@ -57,11 +59,10 @@
           <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
         </label>
 
-        <!-- CAMPO TITLE CORREGIDO -->
-        <label for="title">Title:
-          <input type="text" id="title" name="title" autocomplete="organization-title"
+        <label for="orgTitle">Organization Title:
+          <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title"
             pattern="[A-Za-z\s-]{7,}" 
-            title="At least 7 letters, hyphens, or spaces" required />
+            title="Only letters, spaces, and hyphens; minimum 7 characters" />
         </label>
 
         <label for="email">Email:
@@ -97,9 +98,11 @@
     </main>
 
     <footer>
-      <p>&copy; <span id="year"></span> Togane Chamber of Commerce | Laura P. Núñez</p>
-      <p>Last updated: <span id="lastModified"></span></p>
-    </footer>
+        <p>&copy; <span id="year"></span> Togane Chamber of Commerce | Laura P. Núñez</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+      </footer>
+    
+    
 
   </div>
 
@@ -109,13 +112,14 @@
     form.addEventListener('submit', (event) => {
       const timestampInput = document.getElementById('timestamp');
       timestampInput.value = new Date().toISOString();
+      // Puedes agregar validaciones personalizadas aquí si quieres
     });
-
-    // Añadir año actual y última fecha de modificación
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = document.lastModified;
   </script>
-
-  <script src="scripts/scripts.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+      </script>
+      
+      <script src="scripts/scripts.js"></script>
 </body>
 </html>
