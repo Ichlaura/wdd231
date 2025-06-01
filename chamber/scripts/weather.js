@@ -1,4 +1,5 @@
-const apiKey = "71c44a5b9f22af0a9f0e9244d17d4d75"; //  API key 71c44a5b9f22af0a9f0e9244d17d4d75
+const apiKey = "cd3fe422854cd1b6aa7a4d7a1d995edb"; //  API key cd3fe422854cd1b6aa7a4d7a1d995edb
+
 
 const lat = 35.5396;
 const lon = 140.3612;
