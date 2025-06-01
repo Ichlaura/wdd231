@@ -1,4 +1,5 @@
-const apiKey = "YOUR_API_KEY"; // 🔁 Reemplaza con tu API key
+const apiKey = "71c44a5b9f22af0a9f0e9244d17d4d75"; //  API key 71c44a5b9f22af0a9f0e9244d17d4d75
+
 const lat = 35.5396;
 const lon = 140.3612;
 
