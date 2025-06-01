@@ -168,3 +168,37 @@ footer {
     background-color: #00b4d8;
     color: white;
   }
+  .hero.hero-image {
+    background: 
+      linear-gradient(to right, rgba(0, 119, 182, 0.6), rgba(0, 180, 216, 0.6)),
+      url('../images/togane.jpg') no-repeat center center / cover;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+
+
+  .spotlight-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .spotlight-card {
+    background: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    padding: 16px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .spotlight-card img {
+    max-width: 100px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+  }
+  
