@@ -1,13 +1,22 @@
-fetch("../data/members.json")
-  .then(res => res.json())
+fetch("data/members.json")
+  .then(res => {
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    return res.json();
+  })
   .then(data => {
     const container = document.querySelector(".spotlight-cards");
-    // Filtra solo membresías oro (3) y plata (2)
+    if (!container) {
+      console.error("Container .spotlight-cards not found");
+      return;
+    }
+
+    // Filtra membresías 2 y 3
     const members = data.filter(member => member.membership === 2 || member.membership === 3);
-    // Mezcla aleatoriamente y selecciona 3 para mostrar
+    // Mezcla y toma 3
     const shuffled = members.sort(() => 0.5 - Math.random()).slice(0, 3);
 
-    // Crea y añade las tarjetas al contenedor
     shuffled.forEach(member => {
       const card = document.createElement("div");
       card.classList.add("spotlight-card");
