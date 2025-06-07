@@ -66,3 +66,27 @@
     margin-bottom: 2rem;
   }
 }
+
+.card-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.card-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Puedes agregar un ícono con FontAwesome o usar emoji por ahora */
+.card::before {
+  content: "🏢";
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
