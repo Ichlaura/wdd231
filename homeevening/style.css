@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f6fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background-color: #336699;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+}
+section {
+  margin-bottom: 2rem;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #edeff1;
+}
+ h2 {
+  color: #336699;
+}
+.hero-img img, .game-img img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+.img-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
