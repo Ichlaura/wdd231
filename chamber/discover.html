@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
   <title>Discover | Togane Chamber of Commerce</title>
   <meta name="description" content="Explore and connect with local and international businesses in Togane City through our Chamber of Commerce.">
@@ -13,8 +13,8 @@
 <meta property="og:title" content="Discover | Togane Chamber of Commerce">
 <meta property="og:description" content="Explore local and global businesses in Togane City and connect with our vibrant community.">
 <meta property="og:image" content="images/togane.jpg">
-<meta property="og:url" content="discover.html">
-<meta property="og:type" content="website">
+<meta property="og:url" content="https://ichlaura.github.io/wdd231/chamber/directory.html">
+<meta property="og:type" content="https://ichlaura.github.io/wdd231/chamber/directory.html">
 <meta property="og:locale" content="en_US">
 
 
@@ -60,6 +60,17 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
+    const lastVisit = localStorage.getItem('lastVisit');
+const now = Date.now();
+const visitor = document.getElementById('visitor-info');
+if (lastVisit) {
+  const days = Math.round((now - lastVisit) / 86400000);
+  visitor.textContent = `Welcome back! It's been ${days} days since your last visit.`;
+} else {
+  visitor.textContent = 'Welcome to the Togane Chamber directory!';
+}
+localStorage.setItem('lastVisit', now);
+
   </script>
 </body>
 </html>
