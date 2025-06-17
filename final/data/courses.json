@@ -1,0 +1,43 @@
+[
+  {
+    "id": "c1",
+    "name": "Inglés para principiantes",
+    "language": "Inglés",
+    "level": "Básico",
+    "duration": 12,
+    "description": "Curso diseñado para personas sin conocimientos previos de inglés."
+  },
+  {
+    "id": "c2",
+    "name": "Conversación en Japonés",
+    "language": "Japonés",
+    "level": "Intermedio",
+    "duration": 8,
+    "description": "Mejora tus habilidades de conversación en japonés con situaciones reales."
+  },
+  {
+    "id": "c3",
+    "name": "Español para extranjeros",
+    "language": "Español",
+    "level": "Básico",
+    "duration": 10,
+    "description": "Aprende español desde cero, ideal para hablantes de otros idiomas."
+  },
+  {
+    "id": "c4",
+    "name": "Chino mandarín avanzado",
+    "language": "Chino",
+    "level": "Avanzado",
+    "duration": 16,
+    "description": "Curso para estudiantes con conocimientos previos que quieren perfeccionar el chino."
+  },
+  {
+    "id": "c5",
+    "name": "Coreano básico",
+    "language": "Coreano",
+    "level": "Básico",
+    "duration": 10,
+    "description": "Curso introductorio al coreano con énfasis en lectura y escritura."
+  }
+
+]
